@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .column
+    {
+        width: 100%;
+    }
+	.left-div, .right-div
+    {
+        max-width: 100%;
+    }
+    .instegram-center
+    {
+        width: 100%;
+    }
+}
+
+table {
+	padding: 10px;
+    /*background-color: #4b5a60; */
+	/* text-align: right; */
+}
+
+td.thick {
+	font-weight: bold;
+}
+/*tr
+{
+    background-color:green;
+}*/
+
+button {
+	margin: 10px;
+}
+
+.left-div
+{
+    width: 50%;
+    float: left;
+    margin-bottom:10px;
+}
+.right-div
+{
+    width: 50%;
+    height: 1000px;
+    /*float: right;*/
+    margin-bottom:10px;
+}
+
+.flex-center {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 692px)   {
+    .flex-center{
+        width:100%;   
+        float:none;
+    }
+    
+}
+
+img {
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.table td {
+   text-align: center;   
+}
+
+.thVal {
+    width: 50px;
+    text-align: center;
+}
