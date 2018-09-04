@@ -1,9 +1,7 @@
 language: node_js
 node_js:
  — “10.6.0”
-script:
- — echo “Deploy!!”
-install:
- — npm install -g firebase-tools
-after_success:
- — firebase deploy — project markolit-beit-kama — token 1/1r8Mkh4cHxvEzFOo6r56irhLJU3-aha2gtMVXeE7F-8
+deploy:
+  provider: firebase
+  token:
+    secure: "1/y6BKka3eTu8ZEIUO8h8StfTq1-Q1QTIi4-sh2ioS2s0"
