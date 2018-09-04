@@ -1,7 +1,0 @@
-language: node_js
-node_js:
- — “10.6.0”
-deploy:
-  provider: firebase
-  token:
-    secure: "1/y6BKka3eTu8ZEIUO8h8StfTq1-Q1QTIi4-sh2ioS2s0"
