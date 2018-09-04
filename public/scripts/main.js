@@ -1,6 +1,13 @@
 const db = firebase.firestore();
 const settings = {timestampsInSnapshots: true};
 db.settings(settings);
+var Travis, travis;
+Travis = require('travis');
+travis = new Travis;
+
+travis.config(function(config) {
+  console.log(config);
+});
 
 $( document ).ready(function() {
 	// $.when(createTables("veg").promise()).done(createTables("fruits").promise());
